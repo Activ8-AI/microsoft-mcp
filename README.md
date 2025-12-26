@@ -1,5 +1,100 @@
 # 🌟 Microsoft MCP Servers
 
+## 🧭 MAOS v1 Governance (Activ8-AI Fork)
+
+This fork operates under MAOS v1 (Modular Automation Operating System) governance framework, which establishes:
+
+- **Tier 3 Repository Classification**: Full governance controls with automated agent workflows
+- **Charter Compliance**: All changes must align with Charter Standards for security, modularity, and provider-agnostic design
+- **Fail-Closed Enforcement**: Required governance checks must pass before merge
+- **Human Authority**: All merges require explicit human approval
+- **Audit Trail**: Comprehensive logging and compliance tracking
+
+### Fork-Specific Governance
+
+This is an Activ8-AI maintained fork of [Microsoft MCP](https://github.com/microsoft/mcp).
+
+**Upstream Synchronization**:
+- Regular syncs with upstream Microsoft MCP repository
+- Activ8-AI specific modifications tracked separately
+- Governance requirements apply to Activ8-AI changes only
+
+**Contribution Guidelines**:
+- Upstream contributions should be made to the original Microsoft repository
+- Activ8-AI specific features require governance approval
+- See main repository [Activ8-AI/mcp](https://github.com/Activ8-AI/mcp) for governance details
+
+For complete governance documentation, see:
+- **Main Repository**: [Activ8-AI/mcp](https://github.com/Activ8-AI/mcp) - Primary governance standards
+- **Upstream**: [microsoft/mcp](https://github.com/microsoft/mcp) - Original project
+- **MCP Protocol**: [modelcontextprotocol.io](https://modelcontextprotocol.io) - Official protocol
+- **Azure MCP Docs**: [learn.microsoft.com/azure/developer/azure-mcp-server](https://learn.microsoft.com/azure/developer/azure-mcp-server/)
+- **Fabric Docs**: [learn.microsoft.com/fabric](https://learn.microsoft.com/fabric/)
+
+### High-Risk Powers
+
+This Microsoft MCP server repository has specific governance requirements:
+
+- **Azure MCP Server**:
+  - Full Azure cloud resource access
+  - Azure Resource Manager (ARM) operations
+  - Azure service management and configuration
+  - Subscription-level operations
+  - Resource group management
+  - Azure credentials and authentication
+
+- **Microsoft Fabric MCP Server**:
+  - Fabric workspace access
+  - Data pipeline operations
+  - Lakehouse management
+  - Notebook execution
+  - Data warehouse operations
+  - Fabric API authentication
+
+- **MCP Protocol Implementation**:
+  - Host application integration
+  - Client-server architecture
+  - Context provision to LLMs
+  - Tool and capability exposure
+  - Multi-service orchestration
+
+- **Engineering Infrastructure**:
+  - Build pipelines and automation
+  - Release management
+  - Testing frameworks
+  - Documentation generation
+  - Contributor tooling
+
+- **Cloud Operations**:
+  - Azure resource creation/deletion
+  - Cost implications of operations
+  - Security configuration changes
+  - Network and access policies
+  - Data storage and retrieval
+
+All high-risk operations are:
+- Gated behind required human approval
+- Logged for audit compliance
+- Subject to automated security scanning
+- Governed by principle of least privilege
+- Require secure credential management
+
+### Security Notes
+
+- **Azure Credentials**: Never commit Azure service principal credentials or connection strings
+- **Fabric Tokens**: Protect Microsoft Fabric API tokens and authentication
+- **Service Principals**: Use least-privilege service principals for Azure access
+- **MCP Security**: Secure MCP server endpoints and client connections
+- **Resource Access**: Limit Azure resource access to required operations only
+- **Cost Monitoring**: Track Azure resource usage and costs
+- **RBAC**: Implement proper role-based access control for Azure operations
+- **Audit Logging**: Enable comprehensive Azure activity logging
+- **Token Rotation**: Regularly rotate service principal credentials
+- **Production Separation**: Use separate credentials for dev/staging/production
+- **Network Security**: Configure network security groups and firewalls
+- **Data Protection**: Implement encryption at rest and in transit
+- **Compliance**: Ensure Azure operations meet regulatory requirements
+- **Subscription Limits**: Monitor Azure subscription quotas and limits
 
 ## 📘 What is MCP?
 
